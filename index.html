@@ -865,6 +865,7 @@
         <div id="i6njws" class="gjs-grid-row">
             <div id="ioe5qa" class="gjs-grid-column">
                 <h1 id="itn8dh" class="text-center">Test Environment status</h1>
+                <h2 id="time" class="text-center">start Time</h2>
                 <div id="iud9vh" class="gjs-custom-code">
                     <table id="iytjdh" class="table table-dark">
                         <thead id="id6ij6">
@@ -913,6 +914,7 @@
                 document.getElementById('take_profit_value').innerHTML = data[0].take_profit;
                 document.getElementById('stop_loss_value').innerHTML = data[0].stop_loss;
                 document.getElementById('expired_value').innerHTML = data[0].expired;
+                 document.getElementById('time').innerHTML = data[0].created_at;
                 // const buyValue = data[0].buy_price; // Extract the buy_price from the first item in the array
                 // return buyValue;
             } catch (error) {
